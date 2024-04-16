@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>                             
+    <link rel="stylesheet" href="estilosindex.css">
+    <script src="/scripts/scriptindex.js"></script>
+
+    <style>
+/* Estilos para la sección de preguntas frecuentes y la imagen */
+#faq-section {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding: 50px 0; /* Ajusta el relleno arriba y abajo según sea necesario */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    text-align: left; /* Ajusta el texto a la izquierda dentro de la sección */
+}
+
+.faq {
+    max-width: 800px; /* Ancho máximo deseado */
+    padding: 0 20px; /* Agrega un espacio a los lados */
+    /* Estilos adicionales para la sección de preguntas */
+}
+
+.faq-imagen {
+    display: none; /* Oculta la sección de imagen */
+}
+
+.faq h2 {
+    margin-bottom: 30px;
+}
+
+.faq details {
+    margin-bottom: 20px;
+}
+
+.faq summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq p {
+    margin-top: 10px;
+}
+
+
+
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div id="branding">
+            <h1>Be Water My Life</h1>
+        </div>
+        <button id="menu-btn"> ☰ Menú</button>
+        <nav id="menu">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-menu">✕ Cerrar</button>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/tienda">Tienda</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="cart-btn"> 🛒 Carrito </button>
+        <nav id="cart">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-cart">✕ Cerrar</button>
+                <!-- Aquí puedes agregar los elementos del carrito -->
+                <li>Producto 1</li>
+                <li>Cantidad: 1 </li>
+                <li>Precio: $100</li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=TU_CODIGO_DE_BOTON" target="_blank" class="paypal-button">
+                    PASAR POR CAJA
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Imagen para mostrar contenido -->
+        <section id="seccion-imagenn">
+            <img src="images/INICIO-FOTO.png" alt="banerr">
+        </section>
+
+        <!-- Sección 2: Diseño con iconos para informar sobre productos -->
+        <section id="informacion-iconos">
+            <div class="icono-info">
+                <img src="images/instagram.png" alt="Icono 1">
+                <p>Nos encargamos de diseñar la imagen integra de tu marca y creamos una estrategia de marketing
+                    adecuada a ella. Diseño de logotipos, aplicaciones de marca y todo lo que seas capaz de imaginar
+                    para tu empresa</p>
+            </div>
+            <div class="icono-info">
+                <img src="images/instagram.png" alt="Icono 2">
+                <p> Nos encargamos de diseñar la imagen integra de tu marca y creamos una estrategia de marketing
+                    adecuada a ella. Diseño de logotipos, aplicaciones de marca y todo lo que seas capaz de imaginar
+                    para tu empresa .</p>
+            </div>
+            <div class="icono-info">
+                <img src="images/instagram.png" alt="Icono 3">
+                <p> Nos encargamos de diseñar la imagen integra de tu marca y creamos una estrategia de marketing
+                    adecuada a ella. Diseño de logotipos, aplicaciones de marca y todo lo que seas capaz de imaginar
+                    para tu empresa.</p>
+            </div>
+        </section>
+
+        <!-- Sección 3: Imágenes rotativas y breve descripción -->
+        <section id="imagenes-estaticas">
+            <div class="carrusel-container">
+                <!-- Añade una clase "carrusel" a tu contenedor de imágenes -->
+                <div class="carrusel">
+                    <!-- Tus imágenes aquí -->
+                    <img src="images/1.png" alt="Imagen 1">
+                    <img src="images/2.png" alt="Imagen 2">
+                    <img src="images/3.png" alt="Imagen 3">
+                    <img src="images/1.png" alt="Imagen 1">
+                    <img src="images/2.png" alt="Imagen 2">
+                    <img src="images/3.png" alt="Imagen 3">
+                    <img src="images/1.png" alt="Imagen 1">
+                    <img src="images/2.png" alt="Imagen 2">
+                    <img src="images/3.png" alt="Imagen 3">
+                    <!-- ... -->
+                </div>
+                <!-- Botones para navegar el carrusel -->
+                <button id="carrusel-anterior">❮</button>
+                <button id="carrusel-siguiente">❯</button>
+            </div>
+        </section>
+        
+        
+
+        <section id="faq-section">
+            <div class="container">
+              <div class="faq">
+                <h2> Preguntas Frecuentes </h2>
+                <details>
+                  <summary>¿Pregunta 1?</summary>
+                  <p>Respuesta 1.</p>
+                </details>
+                <details>
+                  <summary>¿Pregunta 2?</summary>
+                  <p>Respuesta 2.</p>
+                </details>
+                <details>
+                  <summary>¿Pregunta 3?</summary>
+                  <p>Respuesta 3.</p>
+                </details>
+              </div>
+            </div>
+          </section>
+<!-- Sección de ubicación con iframe -->
+<section id="ubi">
+    <h2>Nuestra Ubicación</h2>
+    <br>
+    </br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6203.0178076549755!2d-1.8580353255480033!3d38.98088032492181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xd665fb887b77527%3A0x527dcde5e6dd2ed8!2sAv.%20de%20Espa%C3%B1a%2C%20s%2Fn%2C%2002006%20Albacete!3m2!1d38.9809093!2d-1.852882!5e0!3m2!1ses!2ses!4v1712923708419!5m2!1ses!2ses" width="600" height="450" style="border:0;" style="width: 100%; height: 450px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+    </main>
+</body>
+<footer>
+    <p>© 2024 Mi Sitio Web</p>
+    <p>Contacto: info@misitioweb.com</p>
+</footer>
+
+
+
+</html>

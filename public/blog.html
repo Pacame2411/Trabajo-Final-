@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>
+
+    <!-- CSS INDEX Y CSS BLOG DENTRO  -->
+    <link rel="stylesheet" href="estilosindex.css">   
+
+</head>
+<style>
+
+
+
+
+
+#menu-btn {
+    width: 65px;
+    height: 65px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
+
+#cerrar-menu {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cerrar-menu:hover {
+    background-color: #777;
+}
+
+#menu button {
+    background-color: #5555558e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+nav button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    background-color: #fff;
+        border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+}
+
+section a {
+    color: #fff;
+    background-color: #555;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+section a:hover {
+    background-color: #777;
+}
+
+#todoblog{
+    padding: 100px;
+
+}
+
+
+
+
+
+</style>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div id="branding">
+            <h1>Be Water My Life</h1>
+        </div>
+        <button id="menu-btn"> ☰ Menú</button>
+        <nav id="menu">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-menu">✕ Cerrar</button>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/tienda">Tienda</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="cart-btn"> 🛒 Carrito </button>
+        <nav id="cart">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-cart">✕ Cerrar</button>
+                <!-- Aquí puedes agregar los elementos del carrito -->
+                <li>Producto 1</li>
+                <li>Cantidad: 1 </li>
+                <li>Precio: $100</li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=TU_CODIGO_DE_BOTON" target="_blank" class="paypal-button">
+                    PASAR POR CAJA
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+                <!-- Sección 1: Imagen para mostrar contenido -->
+                <section id="seccion-imagenn">
+                    <img src="images/BLOG-FOTO.png" alt="banerr">
+                </section>
+
+
+        <section id="todoblog">
+            <h2>BLOG SOBRE  <b> MARKETING </b> </h2>
+            <p> CLICK <br>para mas informacion.</p>
+            <a href="blog1.html">Leer más</a>
+        </section>
+        <section id="todoblog">
+            <h2> BLOG SOBRE  <b> PUBLICIDAD </b></h2>
+            <p> CLICK <br>para mas informacion.</p>
+            <a href="blog2.html">Leer más</a>
+        </section>
+        <section id="todoblog">
+            <h2> BLOG SOBRE  <b> POSICIONAMIENTO SEO </b></h2>
+            <p> CLICK <br>para mas informacion.</p>
+            <a href="blog3.html">Leer más</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Blog Company. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+    <!--FUNCION MENU DESPLEGABLE CARRO Y MENU -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Variables para el menú y el carrito
+    var menuBtn = document.getElementById('menu-btn');
+    var menu = document.getElementById('menu');
+    var cerrarMenuBtn = document.getElementById('cerrar-menu');
+    var cartBtn = document.getElementById('cart-btn');
+    var cart = document.getElementById('cart');
+    var cerrarCartBtn = document.getElementById('cerrar-cart');
+
+    // Función para abrir el menú
+    function abrirMenu() {
+        menu.style.right = '0';
+    }
+
+    // Función para cerrar el menú
+    function cerrarMenu() {
+        menu.style.right = '-250px';
+    }
+
+    // Función para abrir el carrito
+    function abrirCarrito() {
+        cart.style.right = '0';
+    }
+
+    // Función para cerrar el carrito
+    function cerrarCarrito() {
+        cart.style.right = '-250px';
+    }
+
+    // Eventos para el menú
+    menuBtn.addEventListener('click', abrirMenu);
+    cerrarMenuBtn.addEventListener('click', cerrarMenu);
+
+    // Cierra el menú al hacer clic en cualquier enlace dentro del menú
+    menu.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarMenu();
+        }
+    });
+
+    // Eventos para el carrito
+    cartBtn.addEventListener('click', abrirCarrito);
+    cerrarCartBtn.addEventListener('click', cerrarCarrito);
+
+    // Cierra el carrito al hacer clic en cualquier enlace dentro del carrito
+    cart.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarCarrito();
+        }
+    });
+});
+
+    </script>
+</body>
+
+</html>

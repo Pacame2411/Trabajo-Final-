@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>                             
+    <link rel="stylesheet" href="estilosindex.css">
+    <style>
+ 
+        #formulario{
+            align-items: center;
+            text-align: center;
+            margin-left: 25%;
+            margin-top: 50px;
+        }
+        form {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-field {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-field input, .input-field textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            align-self: center;
+        }
+
+        .align-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#ubi{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+button{
+    background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            align-self: center;
+}
+
+
+ </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div id="branding">
+            <h1>Be Water My Life</h1>
+        </div>
+        <button id="menu-btn"> ☰ Menú</button>
+        <nav id="menu">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-menu">✕ Cerrar</button>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/tienda">Tienda</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="cart-btn"> 🛒 Carrito </button>
+        <nav id="cart">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-cart">✕ Cerrar</button>
+                <!-- Aquí puedes agregar los elementos del carrito -->
+                <li>Producto 1</li>
+                <li>Cantidad: 1 </li>
+                <li>Precio: $100</li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=TU_CODIGO_DE_BOTON" target="_blank" class="paypal-button">
+                    PASAR POR CAJA
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Imagen para mostrar contenido -->
+        <section id="seccion-imagenn">
+            <img src="images/CONTACTO-FOTO.png" alt="banerr">
+        </section>
+
+
+        <!-- Sección 2: FORMULARIO -->
+        <form id="formulario">
+            <div class="input-field">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="input-field">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="input-field">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+            </div>
+            <div class="input-field">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="input-field">
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="input-field">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br>
+    </br>
+    
+
+<!-- Sección de ubicación con iframe -->
+<section id="ubi">
+   <button> <h2> <b> Ubicación </b></h2></button>
+    <br>
+    </br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6203.0178076549755!2d-1.8580353255480033!3d38.98088032492181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xd665fb887b77527%3A0x527dcde5e6dd2ed8!2sAv.%20de%20Espa%C3%B1a%2C%20s%2Fn%2C%2002006%20Albacete!3m2!1d38.9809093!2d-1.852882!5e0!3m2!1ses!2ses!4v1712923708419!5m2!1ses!2ses" width="600" height="450" style="border:0;" style="width: 100%; height: 450px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+    </main>
+</body>
+
+<footer>
+    <p>© 2024 Mi Sitio Web</p>
+    <p>Contacto: info@misitioweb.com</p>
+</footer>
+    <!--FUNCION MENU DESPLEGABLE CARRO Y MENU -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Variables para el menú y el carrito
+    var menuBtn = document.getElementById('menu-btn');
+    var menu = document.getElementById('menu');
+    var cerrarMenuBtn = document.getElementById('cerrar-menu');
+    var cartBtn = document.getElementById('cart-btn');
+    var cart = document.getElementById('cart');
+    var cerrarCartBtn = document.getElementById('cerrar-cart');
+
+    // Función para abrir el menú
+    function abrirMenu() {
+        menu.style.right = '0';
+    }
+
+    // Función para cerrar el menú
+    function cerrarMenu() {
+        menu.style.right = '-250px';
+    }
+
+    // Función para abrir el carrito
+    function abrirCarrito() {
+        cart.style.right = '0';
+    }
+
+    // Función para cerrar el carrito
+    function cerrarCarrito() {
+        cart.style.right = '-250px';
+    }
+
+    // Eventos para el menú
+    menuBtn.addEventListener('click', abrirMenu);
+    cerrarMenuBtn.addEventListener('click', cerrarMenu);
+
+    // Cierra el menú al hacer clic en cualquier enlace dentro del menú
+    menu.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarMenu();
+        }
+    });
+
+    // Eventos para el carrito
+    cartBtn.addEventListener('click', abrirCarrito);
+    cerrarCartBtn.addEventListener('click', cerrarCarrito);
+
+    // Cierra el carrito al hacer clic en cualquier enlace dentro del carrito
+    cart.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarCarrito();
+        }
+    });
+});
+
+    </script>
+
+
+
+</html>
+
+
+
+
+
+
+
+

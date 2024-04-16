@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosindex.css">
+    <style>
+
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.producto {
+    width: calc(25% - 20px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.producto h2 {
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección de descripción */
+.descripcion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descripcion img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.descripcion h2 {
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    margin-bottom: 20px;
+}
+
+.descripcion button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.descripcion button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+    </style>
+
+    <header>
+        <div id="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div id="branding">
+            <h1>Be Water My Life</h1>
+        </div>
+        <button id="menu-btn"> ☰ Menú</button>
+        <nav id="menu">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-menu">✕ Cerrar</button>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/tienda">Tienda</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="cart-btn"> 🛒 Carrito </button>
+        <nav id="cart">
+            <!-- Botón de cerrar dentro de la lista -->
+            <ul>
+                <button id="cerrar-cart">✕ Cerrar</button>
+                <!-- Aquí puedes agregar los elementos del carrito -->
+                <li>Producto 1</li>
+                <li>Cantidad: 1 </li>
+                <li>Precio: $100</li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=TU_CODIGO_DE_BOTON" target="_blank" class="paypal-button">
+                    <button > PASAR POR CAJA </button> 
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <main>
+        <section class="productos">
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 1">
+                <h2>Producto 1</h2>
+                <p>Descripción del producto 1</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 2">
+                <h2>Producto 2</h2>
+                <p>Descripción del producto 2</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 3">
+                <h2>Producto 3</h2>
+                <p>Descripción del producto 3</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 4">
+                <h2>Producto 4</h2>
+                <p>Descripción del producto 4</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section class="productos">
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 5">
+                <h2>Producto 5</h2>
+                <p>Descripción del producto 5</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 6">
+                <h2>Producto 6</h2>
+                <p>Descripción del producto 6</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 7">
+                <h2>Producto 7</h2>
+                <p>Descripción del producto 7</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/images/34.png" alt="Producto 8">
+                <h2>Producto 8</h2>
+                <p>Descripción del producto 8</p>
+                <button>Comprar</button>
+            </div>
+
+
+            
+
+
+           </main>
+           <footer>
+            <p>© 2024 Mi Sitio Web</p>
+            <p>Contacto: info@misitioweb.com</p>
+        </footer>
+        
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Variables para el menú y el carrito
+    var menuBtn = document.getElementById('menu-btn');
+    var menu = document.getElementById('menu');
+    var cerrarMenuBtn = document.getElementById('cerrar-menu');
+    var cartBtn = document.getElementById('cart-btn');
+    var cart = document.getElementById('cart');
+    var cerrarCartBtn = document.getElementById('cerrar-cart');
+
+    // Función para abrir el menú
+    function abrirMenu() {
+        menu.style.right = '0';
+    }
+
+    // Función para cerrar el menú
+    function cerrarMenu() {
+        menu.style.right = '-250px';
+    }
+
+    // Función para abrir el carrito
+    function abrirCarrito() {
+        cart.style.right = '0';
+    }
+
+    // Función para cerrar el carrito
+    function cerrarCarrito() {
+        cart.style.right = '-250px';
+    }
+
+    // Eventos para el menú
+    menuBtn.addEventListener('click', abrirMenu);
+    cerrarMenuBtn.addEventListener('click', cerrarMenu);
+
+    // Cierra el menú al hacer clic en cualquier enlace dentro del menú
+    menu.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarMenu();
+        }
+    });
+
+    // Eventos para el carrito
+    cartBtn.addEventListener('click', abrirCarrito);
+    cerrarCartBtn.addEventListener('click', cerrarCarrito);
+
+    // Cierra el carrito al hacer clic en cualquier enlace dentro del carrito
+    cart.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            cerrarCarrito();
+        }
+    });
+});
+
+    </script>    
+</body>
+</html>

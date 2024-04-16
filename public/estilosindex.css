@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+body, html {
+    margin: 0; /* Asegura que no haya márgenes en el cuerpo y el HTML */
+    padding: 0; /* Asegura que no haya relleno */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh; /* Ajusta según sea necesario */
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+#seccion-imagen {
+    margin-bottom: 10px;
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh; /* Establecemos la altura al 100% de la altura de la pantalla */
+    background-image: url('images/baner.jpg'); /* Reemplaza 'ruta/a/la/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* La imagen se posicionará centrada */
+}
+
+
+
+#informacion-iconos:hover {
+    transform: scale(1.05); /* Cambia el tamaño al hacer hover */
+    transition: transform 0.6s; /* Agrega una transición para suavizar el efecto */
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to right, rgba(85, 85, 85, 0.8), rgba(34, 34, 34, 0.8)); /* Gradiente opaco */
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos */
+    overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal cuando el menú está oculto */
+}
+
+
+#logo img {
+    flex-shrink: 0; /* Evita que el logo afecte el tamaño del botón */
+    max-height: 75px;
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    flex-shrink: 0; /* Evita que el logo afecte el tamaño del botón */
+}
+
+
+
+
+#branding {
+    flex-grow: 1;
+    text-align: center; /* Centra el texto dentro de #branding */
+}
+
+#menu-btn {
+    width: 65px; /* Establece un ancho fijo para el botón */
+    height: 65px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Inicialmente fuera del área visible */
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; /* Agrega transición para suavizar la animación */
+    right: -250px; /* Posición inicial fuera del área visible */
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el efecto */
+}
+
+#menu a:hover {
+    background-color: #555; /* Cambia el color de fondo al hacer hover */
+}
+
+#cerrar-menu {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cerrar-menu:hover {
+    background-color: #777; /* Cambia el color de fondo al hacer hover */
+}
+
+#menu button {
+    background-color: #5555558e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+nav button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+#informacion-iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente blanco */
+}
+
+.icono-info {
+    text-align: center;
+}
+
+.icono-info img {
+    width: 50px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 50px;
+}
+
+.icono-info p {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* CARRUSEL */
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * var(--total-imagenes)); /* Ancho total del carrusel */
+}
+
+/* Estilos para el carrusel */
+.carrusel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Asegúrate de que el contenedor tenga un ancho definido */
+    /* Agrega un margen superior e inferior para separar del resto del contenido */
+    margin-top: 10px; /* Ajusta este valor según necesites */
+    margin-bottom: 10px; /* Ajusta este valor según necesites */
+}
+
+.carrusel img {
+    /* Ajusta el tamaño de las imágenes */
+    width: 4%; /* Por ejemplo, el 80% del ancho del contenedor */
+    max-width: none; /* Anula cualquier max-width previo si es necesario */
+    margin: 100px; /* Centra la imagen horizontalmente */
+    display: block;
+    /* Agrega un margen automático en la parte superior e inferior para centrar verticalmente */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#imagenes-estaticas button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#carrusel-anterior {
+    left: 10px;
+}
+
+#carrusel-siguiente {
+    right: 10px;
+}
+/* TERMINA CARRUSEL */
+
+
+
+/* EMPIEZA BOTON-CARRITO */
+
+#cart-btn {
+    width: 65px; /* Establece un ancho fijo para el botón */
+    height: 65px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#cart {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Inicialmente fuera del área visible */
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; /* Agrega transición para suavizar la animación */
+    right: -250px; /* Posición inicial fuera del área visible */
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 10px;
+}
+
+#cart a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el efecto */
+}
+
+#cerrar-cart {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cerrar-cart:hover {
+    background-color: #777; /* Cambia el color de fondo al hacer hover */
+}
+
+/*  BOTON-PAGAR */
+.paypal-button {
+    background-color: #0070ba;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+/* TERMINA BOTON-CARRITO */
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* TERMINA FOOTER */
+
+/* EMPEIZA SECCION 5 Y 6 */
+
+
+/* Estilos para la sección de preguntas frecuentes y la imagen */
+#faq-section {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos a cada extremo */
+    align-items: center;
+    padding: 0 10%; /* Añade un poco de espacio a los lados */
+}
+
+.faq {
+    flex: 1; /* Permite que el elemento ocupe el espacio disponible */
+    margin-right: 2%; /* Añade espacio entre las preguntas y la imagen */
+    /* Estilos adicionales para la sección de preguntas */
+}
+
+.faq-imagen {
+    flex: 1; /* Permite que el elemento ocupe el espacio disponible */
+    /* Estilos adicionales para la sección de imagen */
+}
+
+.faq-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+
+.faq-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+#ubi {
+    text-align: center;
+    width: 100%;
+}
+
+
+#ubi iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+/* TERMINA SECCION 5 Y 6 */
+
